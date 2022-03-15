@@ -1,0 +1,45 @@
+<html>
+    <body>
+
+    {%block content%}
+        <h4><b>System Information: </b></h4><br />
+        {% for info in system_info %}
+            {{info}} <br/>
+        {% endfor %}
+        <h4></b>List of Softwares: </b></h4> <br />
+        {% for software in list_of_softwares %}
+            {{software}}<br/>
+        {% endfor %}
+
+        Manufacturer: {{manufacturer}}
+        <br />
+        Model: {{model}}
+        <br />
+        Name:{{name}}
+        <br/>
+        Num of Processes: {{num_of_processes}}
+        <br />
+        System Type: {{system_type}}
+        <br />
+        System Family: {{system_family}}
+        <br/>
+        System:{{system}}
+        <br/>
+        Node_Name: {{node}}
+        <br/>
+        Release:{{release}}
+        <br/>
+        Version:{{version}}
+        <br/>
+        Machine:{{machine}}
+        <br/>
+        Processor:{{processor}}
+        <br/>
+        Memory:{{memory}}
+        <br/>
+
+
+        
+    {% endblock %}
+    </body>
+</html>
